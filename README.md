@@ -2,21 +2,29 @@
 
 # Data Description
 
-The Global Entreprenuership Monitor (GEM) is a London-based non-profit that conducts an annual survey to collect data on the attitudes and behaviors of people in 200+ countries on entreprenuership. In each country, reseachers ask 2000 people fill out a questionnaire. This project is focusing on the 2016 global individual-level dataset, because it is the most recent dataset made available to the public. 
+The Global Entreprenuership Monitor (GEM) is a London-based non-profit that conducts an annual survey to collect data on the attitudes and behaviors of people in 200+ countries on entreprenuership. In each country, reseachers interviewed 2000 people using a questionnaire. This project is focusing on the 2016 global individual-level dataset, because it is the most recent dataset available. 
 
 For this project, I'm exploring how people's perception of business opportunity in their communities relates to fear of failure. Does seeing opportunity make it more of less likely someone will site fear as the reason they are not starting a business? Or is fear of failure present more often for people who don't see opportunity? 
 
-## Defintions for terms of analysis
+Here are some defintions of these concepts: 
 
-### Perception of Opportunity 
+## Perception of Opportunity 
 * If an individual sees opportunities to start a firm in the area where they live
 
-### Fear of Failure  
+### Question researchers asked participants:
+
+>"In the next six months, will there be good opportunities for starting a business in the area where you live? "
+
+<br>
+<br>
+
+## Fear of Failure  
 * If fear of failure would prevent an individual from setting up a business
 
-> 
+### Question researchers asked participants:
 >"Would fear of failure prevent you from starting a business?"
->
+
+To begin to understand the relationship between these two factors from the 2016 study, I ran a Fisher's Exact test to 
 
 ## Fisher's Exact Test
 
