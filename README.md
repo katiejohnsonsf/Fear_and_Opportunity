@@ -128,6 +128,8 @@ Using these distributions to conduct 10,000 simulations, I found no instances wh
 
 ## Education level and Fear of Failure
 
+To understand how fear of failure might be related to other contextual factors, I plotted education level by number of individuals who do and do not fear failure. 
+
 <br>
 
 ![histogram of fear of failure across different levels of education](img/Fear_education.png)
@@ -141,8 +143,13 @@ Using these distributions to conduct 10,000 simulations, I found no instances wh
 5. First Stage Of Tertiary Education
 6. Second Stage Of Tertiary Education
 
+I was surprised to find that those with a lower degree of education cite fear of failure less than those at the highest levels of education. 
+
 ## Future Directions
 
-* What influences someone's ability to see business opportunities in their communities? 
+For future direction of exploration, I would like to analyze fear of failure rates with country, gender and income.
+
+Additionally, I would like to explore if country, gender and income are corellated with someone's ability to see business opportunities in their communities.
+
 
 
