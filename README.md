@@ -25,9 +25,11 @@ This reduced the number of rows from 194,824 to 126,608, each representing the r
 ## Perception of Opportunity Research
 <br>
 
-* If an individual sees opportunities to start a firm in the area where they live
+Definition: If an individual sees opportunities to start a firm in the area where they live
 
 <br>
+
+### Researchers asked study participants... <p/>
 
 >"In the next six months, will there be good opportunities for starting a business in the area where you live? "
 
@@ -38,9 +40,11 @@ This reduced the number of rows from 194,824 to 126,608, each representing the r
 <br>
 
 
-* If fear of failure would prevent an individual from setting up a business
+Definition: If fear of failure would prevent an individual from setting up a business
 
 <br>
+
+### Researchers asked study participants...<p/>
 
 >"Would fear of failure prevent you from starting a business?"
 
