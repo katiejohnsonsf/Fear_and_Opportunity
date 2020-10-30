@@ -1,13 +1,13 @@
 # Does the likelihood of fearing failure decrease with the perception of opportunity?
 
 # Background
-Creativity and seeing potential in the world around you is a phenomena shared by people in every part of the world. While some may be motivated by the economics, others may also be moitvated to create to improve each other's lives. Wanting to make a positive contribution is a beautiful part of what makes us human. At the same time, fear and, in many cultures fearing failure inparticular, is another core aspect of the human experience. 
+Creativity and seeing opportunity in the world around you is a phenomena shared by people in every part of the world.  Wanting to make a positive contribution is a beautiful part of what makes us human. At the same time, fear and, in many cultures fearing failure in particular, comes along with trying something new or taking your life in new directions.  
 
-As someone who is passionate about creating things and experiences that help people, I was curious about the relationship between fear of failure and perception of opportunity to start a business. Would the prevalence of fear of failure be greater among those who did not see an opportunity around them? How does perception of opportunity relate to the prevalence of fear of failure? What other factors globally or within specific countries contribute to the prevalance of citing fear of failure as the reason for not starting a business? Let's explore the data, shall we.
+As someone who is passionate about creating things and experiences that help people, I was curious about how fear of failure and the perception of opportunity are correlated to start a business. Would the prevalence of fear of failure be greater among those who did not see an opportunity around them? How does perception of opportunity relate to the prevalence of fear of failure? What other factors globally or within specific countries contribute to the prevalence of citing fear of failure as the reason for not starting a business? Let's explore the data, shall we.
 
 # Data
 
-The Global Entreprenuership Monitor (GEM) is a London-based non-profit that collects data directly from individual entrepreneurs. GEM's theory of change rests on the assumption that entreprenuership is a core mechanism for economic development and for meeting social needs, like the United Nations Sustainable Development goals (SDGs). The organization conducts an annual survey to collect data on the attitudes and behaviors of people in 115+ countries on topics related to entreprenuership. In each country, reseachers interview 2000 people using a questionnaire and prescribed methodology. I'll be focusing on the 2016 global individual-level dataset, because it is the most recent dataset available. 
+The Global Entrepreneurship Monitor (GEM) is a London-based non-profit that collects data directly from individual entrepreneurs. GEM's theory of change rests on the assumption that entrepreneurship is a core mechanism for economic development and for meeting social needs, like the United Nations Sustainable Development goals (SDGs). The organization conducts an annual survey to collect data on the attitudes and behaviors of people in 115+ countries on topics related to entrepreneurship. In each country, researchers interview 2000 people using a questionnaire and prescribed methodology. I'll be focusing on the 2016 global individual-level dataset, because it is the most recent dataset available. 
 
 For this project, I'm exploring how people's perception of business opportunity in their communities relates to their citing fear of failure as the reason for not starting a business. Does seeing opportunity make it more or less likely someone will cite fear as the reason they are not starting a business? Or is fear of failure present more often for people who don't see opportunity? 
 
@@ -15,7 +15,7 @@ For this project, I'm exploring how people's perception of business opportunity 
 
 # Data Cleaning
 
-Initially, I had been intersted in focusing on exploring my topics for India. However, there was too much data missing for my topics of interest, so I switched to a global focus instead.
+Initially, I had been interested in focusing on exploring my topics for India. However, there was too much data missing for my topics of interest, so I switched to a global focus instead.
 
 After indexing out my columns of interest, I cleaned by data by removing rows containing NaN values using the <code>Pandas</code> method <code>df.dropna()</code>. 
 
@@ -63,7 +63,7 @@ To test my Null hypothesis against the data, I began by running a Fisher's exact
 
 ## Fisher's Exact Test
 
-I chose Fisher's Exact test because it measures the significance of the association between two kinds of classification (in this case respondents citing fear of failure and perception of oppportunity to start a business).
+I chose Fisher's Exact test because it measures the significance of the association between two kinds of classification (in this case respondents citing fear of failure and perception of opportunity to start a business).
 
 I used a contingency table for the Fisher's Exact test, which shows the proportion of 126,608 respondents' answers over four response combinations. 
 
@@ -105,7 +105,7 @@ I used a contingency table for the Fisher's Exact test, which shows the proporti
 po = perception of opportunity<br>
 ff = fear of failure
 
-The results of Fisher's Exact test on the data revealed an extremly low P-value (1.99e-238) indicating that the Null hypothesis of no statistical significance between fear of failure and perception of opportuniity should be rejected.
+The results of Fisher's Exact test on the data revealed an extremely low P-value (1.99e-238) indicating that the Null hypothesis of no statistical significance between fear of failure and perception of opportunity should be rejected.
 
 ![histogram for fear of failure vs opportunity](img/fisher_hist.png)
 
