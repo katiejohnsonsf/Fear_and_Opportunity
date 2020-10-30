@@ -102,12 +102,10 @@ I used a contingency table for the Fisher's Exact test, which shows the proporti
   </tbody>
 </table>
 
-po = perception of opportunity
+po = perception of opportunity<br>
 ff = fear of failure
 
 The results of Fisher's Exact test on the data revealed an extremly low P-value (1.99e-238) indicating that the Null hypothesis of no statistical significance between fear of failure and perception of opportuniity should be rejected.
-
-<br>
 
 ![histogram for fear of failure vs opportunity](img/fisher_hist.png)
 
@@ -127,7 +125,7 @@ You can see in the two probability distributions below that the group that does 
 
 ![Comparison of groups and how they cite fear of failure](img/Bayes_AB_prob.png)
 
-Using these distributions to 10,000 simulations, I found no instances where the probability of fear of failure was greater in the variant of no opportunity than the variant that did perceive opportunity.
+Using these distributions to conduct 10,000 simulations, I found no instances where the probability of fear of failure was greater in the variant of no opportunity than the variant that did perceive opportunity. For this reason, I am more confident that I can reject my Null hypothesis that there is no association between perception of opportunity and fear of failure.
 
 ## Education level and Fear of Failure
 
