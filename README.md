@@ -72,10 +72,6 @@ I used a contingency table for the Fisher's Exact test, which shows the proporti
 <table>
   <thead>
     <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
     </tr>
     <tr>
       <th>Response</th>
@@ -106,8 +102,8 @@ I used a contingency table for the Fisher's Exact test, which shows the proporti
   </tbody>
 </table>
 <br>
-<h5>po = perception of opportunity</h5>
-<h5>ff = fear of failure</h5>
+po = perception of opportunity
+ff = fear of failure
 
 <br>
 
