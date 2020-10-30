@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
 import pyreadstat
+import matplotlib.pyplot as plt
 import random
 from scipy import stats
+plt.style.use('ggplot')
 
 
 def cleaned_data(file_name, cols_name_lst):
@@ -15,7 +17,6 @@ def fishers_exact_test(col1_label, col2_label, cleaned_df):
     conting_t = pd.crosstab(cleaned_df[col1_label], cleaned_df[col2_label])
     pvalue = stats.fisher_exact(conting_t)
     return pvalue 
-print( fishers_exact_test(col1_label, col2_label, cleaned_df) )
 
 def bayes_AB_test(): 
     # distribution of fear for people who do not see opportunity around them
@@ -64,7 +65,7 @@ def bayes_AB_dist(cleaned_df):
     ax.set_xlabel('Probability Fear of Failure ', fontsize=15)
     ax.set_ylabel('Probability Density', fontsize=15);
     ax.legend(loc="upper right", fontsize=14)
-    plt.savefig('img/Bayes_AB_prob.png')
+    plt.savefig('../img/Bayes_AB_prob.png')
     return fig 
 
 def edu_hist(cleaned_df): 
@@ -86,14 +87,14 @@ def edu_hist(cleaned_df):
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
     ax.legend(fontsize=14)
-    plt.savefig('img/Fear_education.png')
+    plt.savefig('../img/Fear_education.png')
     return fig 
 
 if __name__ == '__main__':
     
     # import data, index columns of interest, remove nan
     cols_name_lst = ['ctryalp', 'opport', 'fearfail', 'gender', 'age', 'UNEDUC', 'knowent', 'suskill', 'GEMHHINC']
-    file_name = "data/GEM 2016 APS Global - Individual Level Data.sav"
+    file_name = "../data/GEM 2016 APS Global - Individual Level Data.sav"
     cleaned_df = cleaned_data(file_name, cols_name_lst)
 
     # Run Fisher's exact test using a contingency table 
@@ -106,7 +107,7 @@ if __name__ == '__main__':
     conting_hist(cleaned_df)
 
     # calculate and plot a bayes A/B test comparing two 
-    # groups (one that sees opportunity and one that doesn't) in if they cite fear 
+    # group (one that sees opportunity and one that doesn't) in if they cite fear 
     # as the reason that prevents them from starting a business
     '''Compare fear of failure for opportunity vs no opportunity groups'''
     bayes_AB_dist(cleaned_df)

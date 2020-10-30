@@ -9,15 +9,15 @@ As someone who is passionate about creating things and experiences that help peo
 
 The Global Entreprenuership Monitor (GEM) is a London-based non-profit that collects data directly from individual entrepreneurs. GEM's theory of change rests on the assumption that entreprenuership is a core mechanism for economic development and for meeting social needs, like the United Nations Sustainable Development goals (SDGs). The organization conducts an annual survey to collect data on the attitudes and behaviors of people in 115+ countries on topics related to entreprenuership. In each country, reseachers interview 2000 people using a questionnaire and prescribed methodology. I'll be focusing on the 2016 global individual-level dataset, because it is the most recent dataset available. 
 
-For this project, I'm exploring how people's perception of business opportunity in their communities relates to their citing fear of failure. Does seeing opportunity make it more of less likely someone will site fear as the reason they are not starting a business? Or is fear of failure present more often for people who don't see opportunity? 
+For this project, I'm exploring how people's perception of business opportunity in their communities relates to their citing fear of failure as the reason for not starting a business. Does seeing opportunity make it more or less likely someone will cite fear as the reason they are not starting a business? Or is fear of failure present more often for people who don't see opportunity? 
 
 <br>
 
 # Data Cleaning
 
-Initially, I had been intersted in focusing on exploring my topics for India. However, there was not data for my data fields of interest, so I switched to a global focus instead.
+Initially, I had been intersted in focusing on exploring my topics for India. However, there was too much data missing for my topics of interest, so I switched to a global focus instead.
 
-To clearn the global data, after indexing out my columns of interest, I removed rows containing NaN using the <code>Pandas</code> method <code>df.dropna()</code>. 
+After indexing out my columns of interest, I cleaned by data by removing rows containing NaN values using the <code>Pandas</code> method <code>df.dropna()</code>. 
 
 This reduced the number of rows from 194,824 to 126,608, each representing the response of a study participant. Though a large proportion of the dataset, the remaining data was still large enough for my global analysis. 
 
