@@ -101,13 +101,9 @@ I used a contingency table for the Fisher's Exact test, which shows the proporti
     </tr>
   </tbody>
 </table>
-<br>
+
 po = perception of opportunity
 ff = fear of failure
-
-<br>
-
-
 
 The results of Fisher's Exact test on the data revealed an extremly low P-value (1.99e-238) indicating that the Null hypothesis of no statistical significance between fear of failure and perception of opportuniity should be rejected.
 
