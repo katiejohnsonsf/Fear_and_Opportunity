@@ -27,7 +27,6 @@ This reduced the number of rows from 194,824 to 126,608, each representing the r
 
 Definition: If an individual sees opportunities to start a firm in the area where they live
 
-<br>
 
 ### Researchers asked study participants... <p/>
 
@@ -42,7 +41,6 @@ Definition: If an individual sees opportunities to start a firm in the area wher
 
 Definition: If fear of failure would prevent an individual from setting up a business
 
-<br>
 
 ### Researchers asked study participants...<p/>
 
